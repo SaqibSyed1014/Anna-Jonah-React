@@ -26,7 +26,9 @@ function TopBarSection() {
                     </div>
                 </div>
                 <div className="logo">
-                    <div className="logo-wrapper"><img src="/public/images/logo-anna.svg" loading="lazy" alt="" className="image" /></div>
+                    <div className="logo-wrapper">
+                        <img src="/images/logo-anna.svg" loading="lazy" alt="Logo" className="image" />
+                    </div>
                 </div>
                 <p className="cta">Order a table</p>
             </div>
