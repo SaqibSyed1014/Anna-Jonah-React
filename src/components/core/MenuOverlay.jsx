@@ -9,7 +9,7 @@ function MenuOverlay({ hideMenuOverlay }) {
                         <div className="cross-bar left"></div>
                         <div className="cross-bar right"></div>
                     </div>
-                    <div style={{ color: 'rgb(236,196,198)' }} className="close-label">
+                    <div className="close-label">
                         <p className="close-btn-label">close</p>
                     </div>
                 </div>

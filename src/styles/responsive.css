@@ -1,3 +1,29 @@
+@media screen and (min-width: 1440px) {
+    .hamburger-pc {
+        cursor: pointer;
+    }
+
+    .header-dishes {
+        bottom: 0%;
+    }
+
+    .cta {
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        position: absolute;
+        top: 30px;
+        bottom: auto;
+        left: auto;
+        right: 30px;
+    }
+
+    .section-subheading{
+        font-size: 49px !important;
+    }
+}
+
 @media screen and (min-width: 1280px) {
     .logo {
         top: 20px;
@@ -19,6 +45,7 @@
     }
 
     .header-dishes {
+        height: 780px;
         padding-top: 20px;
         top: -30px;
         transform: scale(1.6);
@@ -43,7 +70,8 @@
     }
 
     .section-subheading {
-        font-size: 49px;
+        font-size: 49px !important;
+        line-height: 52px !important;
     }
 
     .menu-dishes {
@@ -93,28 +121,6 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .hamburger-pc {
-        cursor: pointer;
-    }
-
-    .header-dishes {
-        bottom: 0%;
-    }
-
-    .cta {
-        text-transform: uppercase;
-        cursor: pointer;
-        font-size: 16px;
-        font-weight: 700;
-        position: absolute;
-        top: 30px;
-        bottom: auto;
-        left: auto;
-        right: 30px;
-    }
-}
-
 @media screen and (max-width: 991px) {
     .hamburger-btn {
         height: 22px;
@@ -140,6 +146,7 @@
 
     .header-dishes {
         top: 0;
+        height: 860px;
     }
 
     .mid-section {
@@ -148,6 +155,7 @@
 
     .section-heading {
         font-size: var(--section-heading-md);
+        line-height: 37px;
     }
 
     .section-heading.left {
@@ -160,7 +168,8 @@
     }
 
     .section-subheading {
-        font-size: 23px;
+        font-size: 23px !important;
+        line-height: 32px !important;
     }
 
     .dishes-image-wrapper {

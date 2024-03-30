@@ -23,38 +23,15 @@
   --ternary: #821c26;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   background-color: var(--secondary);
   color: var(--primary);
   font-family: Gabarito, sans-serif;
-}
-
-
-
-.hamburger-btn {
-  flex-flow: column;
-  justify-content: space-between;
-  width: 42px;
-  height: 26px;
-  display: flex;
-  position: static;
-  top: 30px;
-  bottom: auto;
-  left: 30px;
-  right: auto;
-}
-
-.hamburger-bar {
-  background-color: var(--primary);
-  flex: none;
-  height: 2px;
-}
-
-.hamburger-bar.middle {
-  cursor: auto;
-  width: 50%;
 }
 
 .hamburger-pc {
@@ -82,6 +59,45 @@ body {
   font-size: 16px;
   font-weight: 700;
 }
+
+.hamburger-btn {
+  flex-flow: column;
+  justify-content: space-between;
+  width: 42px;
+  height: 26px;
+  display: flex;
+  position: static;
+  top: 30px;
+  bottom: auto;
+  left: 30px;
+  right: auto;
+}
+
+.hamburger-bar {
+  background-color: var(--primary);
+  flex: none;
+  height: 2px;
+}
+
+.hamburger-pc .hamburger-bar{
+  width: 100%;
+  transition: .3s ease-in-out all;
+}
+.hamburger-pc .hamburger-bar.middle{
+  width: 50%;
+}
+.hamburger-pc:hover .hamburger-bar{
+  width: 50%;
+}
+.hamburger-pc:hover .hamburger-bar.middle{
+  width: 100%;
+}
+.hamburger-pc:hover .hamburger-label{
+  color: var(--ternary);
+}
+
+
+
 
 .logo {
   justify-content: center;
@@ -150,6 +166,7 @@ body {
   color: var(--primary);
   font-family: Canopee, sans-serif;
   font-size: var(--section-heading-lg);
+  line-height: 42px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
@@ -204,7 +221,6 @@ body {
 }
 
 .section-subheading {
-  margin-top: 10px;
   margin-bottom: 0;
   font-family: Canopee, sans-serif;
   font-size: 31px;
@@ -323,6 +339,18 @@ body {
   display: block;
   position: relative;
   transform: scale(1.35);
+  transition: .3s ease-in-out all;
+}
+
+.close-label{
+  color: var(--secondary);
+  transition: .3s ease-in-out all;
+}
+.toggle-close:hover .cross-icon{
+  transform: rotate(90deg);
+}
+.toggle-close:hover .close-label{
+  color: var(--white);
 }
 
 .cross-bar {

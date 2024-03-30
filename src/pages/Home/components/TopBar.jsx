@@ -17,11 +17,11 @@ function TopBarSection() {
                     className="hamburger-pc"
                 >
                     <div className="hamburger-btn">
-                        <div style={{ width: '100%' }} className="hamburger-bar"></div>
-                        <div style={{ width: '50%' }} className="hamburger-bar middle"></div>
-                        <div style={{ width: '100%' }} className="hamburger-bar"></div>
+                        <div className="hamburger-bar"></div>
+                        <div className="hamburger-bar middle"></div>
+                        <div className="hamburger-bar"></div>
                     </div>
-                    <div style={{ color: 'rgb(238,43,74)' }} className="hamburger-label">
+                    <div className="hamburger-label">
                         <p className="hamburger-label-text">More</p>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ import FeaturedDish from "@/pages/Home/components/FeaturedDish";
 
 function Home() {
     useEffect(() => {
-        Webflow.require('ix2').init();
+        // Webflow.require('ix2').init();
     }, []);
     return <>
         <TopBar />

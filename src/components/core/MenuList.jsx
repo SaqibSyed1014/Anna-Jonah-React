@@ -4,7 +4,7 @@ function MenuList({ tableHeading, tableSubheading, tableData }) {
 
     return (
         <div>
-            <div className="headings">
+            <div data-aos="fade-up-right" className="headings">
                 <h2 className="section-heading left">
                     {tableHeading}
                 </h2>
@@ -14,7 +14,7 @@ function MenuList({ tableHeading, tableSubheading, tableData }) {
             </div>
             <div className="menu-table">
                 {[...Array(Math.ceil(tableData.length / 2))].map((_, row) => (
-                    <div className="menu-table-row" key={row}>
+                    <div className="menu-table-row" data-aos="fade-up" key={row}>
                         {tableData.slice(row * 2, row * 2 + 2).map((data, index) => (
                             <div className="menu-table-cell" key={index}>
                                 <div className="menu-table-item">
