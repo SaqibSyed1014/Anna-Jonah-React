@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 
 import './styles/tailwind.css'
 import './styles/main.css'
+import './styles/responsive.css'
 
 import App from './App'
 
