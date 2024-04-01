@@ -133,6 +133,7 @@ body {
   position: relative;
   top: -15px;
   transform: scale(1.2);
+  transition: .3s ease all;
 }
 
 .header-section {
