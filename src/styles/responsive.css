@@ -21,6 +21,7 @@
 
     .section-subheading{
         font-size: 49px !important;
+        line-height: 52px !important;
     }
 }
 
@@ -70,8 +71,7 @@
     }
 
     .section-subheading {
-        font-size: 49px !important;
-        line-height: 52px !important;
+        font-size: 49px;
     }
 
     .menu-dishes {
@@ -146,7 +146,7 @@
 
     .header-dishes {
         top: 0;
-        height: 860px;
+        height: 525px;
     }
 
     .mid-section {
@@ -169,7 +169,7 @@
 
     .section-subheading {
         font-size: 23px !important;
-        line-height: 32px !important;
+        line-height: 32px;
     }
 
     .dishes-image-wrapper {
@@ -232,7 +232,11 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+    .header-dishes {
+        height: 750px;
+        top: 150px;
+    }
     .hamburger-label {
         display: none;
     }
@@ -256,5 +260,27 @@
     .image-3 {
         text-align: left;
         display: block;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .header-dishes img{
+        transform: scale(1.75);
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .header-dishes{
+        top: 150px;
+        height: 550px;
+    }
+    .header-dishes img{
+        transform: scale(2);
+    }
+}
+@media screen and (max-width: 375px) {
+    .header-dishes{
+        top: 100px;
+        height: 425px;
     }
 }
